@@ -1,0 +1,140 @@
+<main class="container my-4">
+
+    <!-- Detalle de incidencia -->
+    <section class="card mb-4">
+        <div class="card-header fw-bold">
+            Detalle de la incidencia
+        </div>
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-sm-4 fw-semibold">ID:</div>
+                <div class="col-sm-8" id="inc-id"></div>
+
+                <div class="col-sm-4 fw-semibold">Título:</div>
+                <div class="col-sm-8" id="inc-titulo"></div>
+
+                <div class="col-sm-4 fw-semibold">Descripción:</div>
+                <div class="col-sm-8" id="inc-descripcion"></div>
+
+                <div class="col-sm-4 fw-semibold">Categoría:</div>
+                <div class="col-sm-8" id="inc-categoria"></div>
+
+                <div class="col-sm-4 fw-semibold">Fecha creación:</div>
+                <div class="col-sm-8" id="inc-fechaCreacion"></div>
+
+                <div class="col-sm-4 fw-semibold">Última modificación:</div>
+                <div class="col-sm-8" id="inc-ultimaModificacion"></div>
+
+                <div class="col-sm-4 fw-semibold">Estado actual:</div>
+                <div class="col-sm-8" id="inc-estadoActual"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Solicitante -->
+    <section class="card mb-4">
+        <div class="card-header fw-bold">
+            Solicitante
+        </div>
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-sm-4 fw-semibold">DNI:</div>
+                <div class="col-sm-8" id="sol-dni"></div>
+
+                <div class="col-sm-4 fw-semibold">Nombre:</div>
+                <div class="col-sm-8" id="sol-nombre"></div>
+
+                <div class="col-sm-4 fw-semibold">Apellidos:</div>
+                <div class="col-sm-8" id="sol-apellidos"></div>
+
+                <div class="col-sm-4 fw-semibold">Rol:</div>
+                <div class="col-sm-8" id="sol-rol"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Técnico -->
+    <section class="card mb-4">
+        <div class="card-header fw-bold">
+            Técnico asignado
+        </div>
+        <div class="card-body">
+            <div class="row mb-2">
+                <div class="col-sm-4 fw-semibold">DNI:</div>
+                <div class="col-sm-8" id="tec-dni"></div>
+
+                <div class="col-sm-4 fw-semibold">Nombre:</div>
+                <div class="col-sm-8" id="tec-nombre"></div>
+
+                <div class="col-sm-4 fw-semibold">Apellidos:</div>
+                <div class="col-sm-8" id="tec-apellidos"></div>
+
+                <div class="col-sm-4 fw-semibold">Rol:</div>
+                <div class="col-sm-8" id="tec-rol"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Historial de estados -->
+    <section class="card mb-4">
+        <div class="card-header fw-bold">
+            Historial de estados
+        </div>
+        <div class="card-body">
+            <table class="table table-striped" id="tabla-estados">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Estado anterior</th>
+                        <th>Estado nuevo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Se rellenará con JS -->
+                </tbody>
+            </table>
+
+            <div class="row align-items-center mt-3">
+                <div class="col-sm-4 fw-semibold">Seleccionar nuevo estado:</div>
+                <div class="col-sm-5">
+                    <select class="form-select" id="select-nuevo-estado"></select>
+                </div>
+                <div class="col-sm-3">
+                    <button class="btn btn-primary w-100" id="btn-cambiar-estado">
+                        Cambiar estado
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Comentarios -->
+    <section class="card mb-4">
+        <div class="card-header fw-bold">
+            Comentarios
+        </div>
+        <div class="card-body">
+            <table class="table table-striped" id="tabla-comentarios">
+                <thead>
+                    <tr>
+                        <th>Autor</th>
+                        <th>Fecha</th>
+                        <th>Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Se rellenará con JS -->
+                </tbody>
+            </table>
+
+            <button class="btn btn-success mt-3" id="btn-aniadir-comentario">
+                Añadir comentario
+            </button>
+        </div>
+    </section>
+
+</main>

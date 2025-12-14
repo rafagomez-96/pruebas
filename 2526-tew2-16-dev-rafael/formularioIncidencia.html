@@ -1,0 +1,68 @@
+<main>
+    <section id="crear-incidencia" aria-labelledby="titulo-crear-incidencia" class="container mt-5">
+
+        <header class="mb-4">
+            <h2 id="titulo-crear-incidencia">Crear incidencia</h2>
+        </header>
+
+        <!-- Contenedor de alertas, gestionado por JavaScript -->
+        <div id="alertas-incidencia" class="mb-3"></div>
+
+        <article>
+            <form id="formNuevaIncidencia">
+
+                <div class="row g-3">
+
+                    <!-- TÍTULO -->
+                    <div class="col-12">
+                        <label for="titulo" class="form-label">Título</label>
+                        <input
+                            type="text"
+                            id="titulo"
+                            name="titulo"
+                            maxlength="120"
+                            placeholder="Escriba un título"
+                            class="form-control"
+                            required
+                            autofocus
+                        >
+                    </div>
+
+                    <!-- DESCRIPCIÓN -->
+                    <div class="col-12">
+                        <label for="descripcion" class="form-label">Descripción</label>
+                        <textarea
+                            id="descripcion"
+                            name="descripcion"
+                            rows="6"
+                            maxlength="2000"
+                            placeholder="Describa la incidencia"
+                            class="form-control"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- CATEGORÍA -->
+                    <div class="col-12 col-md-6">
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <select id="categoria" name="categoria" class="form-select" required>
+                            <option value="">Seleccione una categoría</option>
+                            <!-- Las opciones se cargan vía JS -->
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr class="my-4">
+
+                <!-- ACCIONES -->
+                <div class="d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Crear</button>
+                    <button type="button" id="btnCancelar" class="btn btn-secondary">Cancelar</button>
+                </div>
+
+            </form>
+        </article>
+
+    </section>
+</main>

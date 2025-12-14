@@ -1,0 +1,59 @@
+<main>
+    <section id="incidencias-listado" aria-labelledby="titulo-incidencias">
+        <header class="mb-4">
+            <h2 id="titulo-incidencias">Listado de Incidencias</h2>
+        </header>
+
+        <form id="filtrosIncidencias" class="container mt-3 d-none" aria-label="Filtros de incidencias">
+            <div class="row g-3">
+
+                <!-- Técnico -->
+                <div class="col-md-3">
+                    <label for="filtroTecnico" class="form-label">Técnico</label>
+                    <select id="filtroTecnico" name="tecnico" class="form-select"></select>
+                </div>
+
+                <!-- Estado -->
+                <div class="col-md-3">
+                    <label for="filtroEstado" class="form-label">Estado</label>
+                    <select id="filtroEstado" name="estado" class="form-select"></select>
+                </div>
+
+                <!-- Botón Aplicar -->
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-primary w-100" id="btnFiltroAplicar">
+                        Aplicar
+                    </button>
+                </div>
+
+                <!-- Botón Limpiar -->
+                <div class="col-md-3">
+                    <button type="reset" class="btn btn-secondary w-100" id="btnFiltroLimpiar">
+                        Limpiar
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="table-responsive mt-4">
+            <table id="incidencias-listado-tabla" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" data-col="titulo">Título</th>
+                        <th scope="col" data-col="creacion">Creación</th>
+                        <th scope="col" data-col="actualizacion">Última Actualización</th>
+                        <th scope="col" data-col="estado">Estado</th>
+                        <th scope="col" data-col="categoria">Categoría</th>
+                        <th scope="col" data-col="detalle">Detalle</th>
+                        <th scope="col" data-col="reasignar">Reasignar</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+</main>
